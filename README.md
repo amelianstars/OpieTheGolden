@@ -29,5 +29,4 @@ This project is for educational purposes only and is not licensed.
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-To come.
+To achieve Opie's written dialect for the text on the page, The Dialectizer was used:http://www.rinkworks.com/dialect/.
