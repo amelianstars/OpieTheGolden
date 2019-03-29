@@ -1,0 +1,316 @@
+
+#container{
+    height: 5300px;
+    max-width: 1100px;
+    background-color: rgba(157, 210, 234, 0.7);
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    position: relative;
+    color: #747372;
+    font-family: 'Neucha', cursive;
+
+
+}
+
+/*For 'Hello my name is Opie' box at the top of page*/
+#intro{
+  /*font-size: 30px;*/
+  background-color: #f4f2cf;
+  border-radius: 17px;
+  display: block;
+  box-shadow: 1px 1px 1px 2px #dbd78e;
+  font-family: 'Indie Flower', cursive;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*A span that makes the word 'golden' a dark yellow color*/
+#golden{
+  color: #ffd700;
+}
+
+#opie-name{
+color: #0000ff;
+}
+#opie-closeup{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 3px #ffffff;
+  max-width: 100%;
+}
+
+#warning{
+  color: tomato;
+  text-align: center;
+  font-family: 'Margarine', cursive;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-top: 15px;
+  font-size: 10px;
+}
+
+.facts{
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.column-1{
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #ffc180;
+  opacity: .9;
+  color: #5d5c5b;
+  height: 1945px;
+  /*margin-right: 40px;
+  margin-bottom: 100px;*/
+
+}
+
+
+
+.fa-bone{
+  color: #2C75FF;
+}
+
+/*background video, to go behind everything else */
+#bgvideo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+}
+
+video#opie-swimming{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+
+/*All pictures and captions for photos in column 2 */
+#opiedolly,
+#opies-baby-pic,
+#opiescout-onporch,
+#opie-camping{
+width: 510px;
+  height: 430px;
+  border-radius: 10px;
+  margin-bottom:-15px;
+  align-items: center;
+}
+
+
+.column-1 p{
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+#about{
+  font-size: 35px;
+  color: #002672;
+  font-family: 'Indie Flower', cursive;
+}
+
+
+
+#golden-cartoon{
+  float: right;
+  border-radius: 15px;
+  width: 350px;
+  height: 350px;
+}
+
+/*the png image of Opie walking*/
+#opiegolden{
+display: block;
+position: absolute;
+z-index: -99;
+width: 300px;
+height: 550px;
+left: -170px;
+}
+
+.steak{
+  padding-bottom: 100px;
+}
+
+/*Container for the photo slider */
+.img-wrapper{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.pics img{
+  border-radius: 10px;
+}
+
+/*Hide the pictures of the slideshow from showing up on the page.*/
+.pics{
+  display:none;
+}
+
+.prev,
+.next{
+  position: absolute;
+  color: #fefefe;
+  padding: 17px;
+  margin-top: -21px;
+  width: auto;
+  top: 50%;
+  border-radius: 0 3px 3px 0;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease;
+  user-select: none;
+}
+
+/* next button gets positioned to the right */
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/*when user hovers over prev or next button, background of buttton turns black*/
+.prev:hover,
+.next:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.caption{
+  color: blue;
+  font-size: 16px;
+  padding:8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align:center;
+}
+
+/*text for the number of pictures 1/7, 2/7, 3/7, etc.*/
+.count{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c0c0c0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease
+}
+
+.dot:hover,
+.current{
+  background-color: dimgray;
+}
+/* Fading animation */
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.column-2 img{
+  display:none;
+}
+
+#camping-pic,
+#babyope,
+#dolly-pic,
+#opiescout-pic{
+  display: none;
+}
+
+@media only screen and (min-width: 1167px) {
+  .column-2{
+    margin-left: 25px;
+    /*background-color: #ffc180; #94c480
+    opacity: .9
+    color: #5d5c5b;
+    height: 900px;*/
+    color: white;
+  float: right;
+
+
+  }
+
+  #warning{
+    font-size: 20px;
+  }
+
+  #camping-pic,
+  #babyope,
+  #dolly-pic,
+  #opiescout-pic
+  {
+    font-size: 13px;
+  margin-bottom: 45px;
+  text-align: center;
+  display: block;
+  }
+
+  .column-2 img{
+    display: block;
+margin: auto;
+  }
+  #intro{
+    font-size: 40px;
+    background-color: #f4f2cf;
+    border-radius: 17px;
+    display: inline;
+    margin-left: 110px;
+    box-shadow: 1px 1px 1px 2px #dbd78e;
+    font-family: 'Indie Flower', cursive;
+
+  }
+  #golden-cartoon{
+    display: none;
+  }
+  #intro{
+    font-size: 40px;
+    margin-left: 110px;
+  }
+}
