@@ -283,6 +283,10 @@ left: -100px;
 
   }
 
+  #register-mobile{
+    display: none;
+  }
+
   #warning{
     font-size: 20px;
   }
