@@ -201,6 +201,14 @@ left: -170px;
   background-color: rgba(0,0,0,0.8);
 }
 
+#trivia{
+  text-align: center;
+  text-align: center;
+  font-family: 'Margarine', cursive;
+  font-size: 20px;
+
+}
+
 .caption{
   color: white;
   font-size: 30px;
