@@ -35,8 +35,6 @@
 #opie-name{
 color: #0000ff;
 }
-
-/*the main, largest, picture of Opie on the page */
 #opie-closeup{
   display: block;
   margin-left: auto;
@@ -57,13 +55,11 @@ color: #0000ff;
   font-size: 10px;
 }
 
-/*container for the 2 columns */
 .facts{
   padding-top: 20px;
   font-size: 20px;
 }
 
-/*flex container */
 .row{
   display: flex;
   flex-direction: row;
@@ -71,8 +67,6 @@ color: #0000ff;
   width: 100%;
 
 }
-
-/*flex container */
 .column{
   display: flex;
   flex-direction: column;
@@ -152,12 +146,12 @@ width: 510px;
 
 /*the png image of Opie walking*/
 #opiegolden{
-display: inline-block;
+display: block;
 position: absolute;
 z-index: -99;
 width: 300px;
 height: 550px;
-left: -100px;
+left: -170px;
 }
 
 .steak{
